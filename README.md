@@ -1,7 +1,7 @@
 # DengAI : Predicting Disease Spread
 Principle of Data Science-UM Master
 
-<img src="img/mosquito.png" alt="outbreak" height="500" width="1000">
+<img src="img/mosquito.jpg" alt="outbreak" height="300" width="1000">
 
 It is a dengue prediction use case, where data from 2 cities, San Juan (sj) and Iquitos (iq) are given. We will use the data for analysis and also prediction of dengue cases. This use case is originated from the [DengAI](https://www.drivendata.org/competitions/44/dengai-predicting-disease-spread/).
 
@@ -12,7 +12,7 @@ It is a dengue prediction use case, where data from 2 cities, San Juan (sj) and 
 
 <b>Dengue</b> fever is a <code>mosquito-borne</code> disease that occurs in tropical and sub-tropical parts of the world. In mild cases, symptoms are similar to the flu: fever, rash, and muscle and joint pain. In severe cases, <b>Dengue</b> fever can cause severe bleeding, low blood pressure, and even death.
 
-<img src="img/dengue_outbreak.png" alt="outbreak" height="500" width="600">
+<img src="img/dengue_outbreak.png" alt="outbreak" height="400" width="1000">
 
 <h3>2. Can we gain deeper understanding on variables that will affect the <b>Dengue</b> cases?</h3>
 
