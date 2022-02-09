@@ -23,7 +23,7 @@ from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.feature_selection import SelectKBest, chi2, SelectFromModel
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error, accuracy_score
 from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV, RandomizedSearchCV
-from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor, ExtraTreesRegressor
+from sklearn.ensemble import RandomForestRegressor, AdaBoostRegressor, GradientBoostingRegressor, ExtraTreesRegressor, BaggingClassifier
 from xgboost import XGBRegressor
 
 import warnings
@@ -223,6 +223,12 @@ class Train(Analysis):
                                 "learning_rate": [0.03, 0.1, 0.3],
                                 'max_depth': [2, 4, 5, 6, 8],
                             }),
+            BAGGING = dict(alg=BaggingClassifier(), args=dict(random_state=42),
+                    param_grid={
+                        "n_estimators": [10, 30, 50, 100],
+                        "max_features": [1, 5, 20, 100],
+                        'max_samples': [1, 5, 20, 100],
+                    }),
         )
         
     
@@ -385,6 +391,9 @@ class Train(Analysis):
             alg = model_type["alg"]
         elif model_name == "GRADIENT":
             model_type = self.REGRESSION_MODELS["GRADIENT"]
+            alg = model_type["alg"]
+        elif model_name == "BAGGING":
+            model_type = self.REGRESSION_MODELS["BAGGING"]
             alg = model_type["alg"]
             
         if tuning_method == None:
