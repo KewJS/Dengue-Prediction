@@ -66,6 +66,9 @@ Each variable will tabulate each set of data accordingly, will then visualize/pl
 <div class="alert alert-info" style="background-color:#006a79; color:white; padding:0px 10px; border-radius:5px;"><h2 style='margin:10px 5px'>Project Directory</h2>
 </div>
 
+Model are run as following image:
+<img src="img/model_workflow.png" alt="outbreak" height="400" width="1000">
+
 - Processing File: <code>Group_8_Dengue_Cases_Prediction-1st-Preprocessing.ipynb</code>
 - Modelling File: <code>Group_8_Dengue_Cases_Prediction-2nd-Modelling.ipynb</code>
 - Whole Process Python Script: <code>main.py</code>
