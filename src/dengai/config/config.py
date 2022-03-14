@@ -2,14 +2,16 @@ import os
 import sys
 import pathlib
 import inspect
+from datetime import timedelta
 
 BASE_DIR = pathlib.Path().resolve()
 
 
-
-class Config(Object):
+class Config(object):
     
     QDEBUG = True
+    
+    CURRENT_TIME = datetime.delta()
     
     NAME = dict(
         FULL = "Dengue Catch",
