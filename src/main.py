@@ -31,11 +31,6 @@ warnings.filterwarnings('ignore')
 warnings.filterwarnings(action='ignore',category=DeprecationWarning)
 warnings.filterwarnings(action='ignore',category=FutureWarning)
 
-import logging
-file_handler = logging.FileHandler('logfile.log')
-logging.basicConfig(level=logging.INFO, format='%(asctime)s : %(levelname)s : %(name)s : %(message)s')
-
-
 class Config(object):
     
     LOGGER = logging.getLogger(__name__)
